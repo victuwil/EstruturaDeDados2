@@ -1,0 +1,23 @@
+1. Problemas de Busca em Funções Não-Linearmente Crescentes ou Decrescentes
+Em alguns problemas de otimização ou de busca em funções com características não-lineares, o Ternary Search pode ser útil. Em vez de simplesmente localizar um valor, o Ternary Search pode ser utilizado para encontrar máximos ou mínimos locais de uma função unimodal (uma função que é crescente e depois decrescente ou vice-versa). Isso ocorre porque, ao dividir em três partes, ele pode encontrar melhor a região de interesse onde a função muda de direção.
+
+Exemplo:
+
+Encontrar o ponto máximo de uma função unimodal: Em problemas de otimização, onde se precisa localizar o ponto máximo ou mínimo de uma função, o Ternary Search pode ser mais eficiente, pois explora melhor a função em três partes, ao invés de duas.
+2. Divisão do Problema em Três Partes Vantajosas
+Em alguns casos específicos, onde a lista ou o intervalo de busca pode ser decomposto em três regiões distintas de interesse, a divisão feita pelo Ternary Search pode resultar em uma análise mais "balanceada" do problema.
+
+Exemplo:
+
+Busca em intervalos contínuos: Se você está fazendo uma busca que envolve divisões em três categorias ou se a lista ou a sequência que está sendo analisada tem três "regiões" naturais de interesse, o Ternary Search pode se tornar mais vantajoso.
+3. Aplicações em Algoritmos de Busca em Árvores ou Grafo com Três Filhos
+Se você está lidando com árvores de busca ou algoritmos de grafos onde cada nó possui três filhos ou subdivide em três partes (ex.: árvores ternárias), o Ternary Search pode ser uma extensão natural da técnica de Busca Binária. Isso pode tornar o algoritmo mais intuitivo, pois a divisão em três partes é mais natural e os nós precisam ser visitados em cada uma dessas três subdivisões.
+
+4. Busca com Funções de Custo que Requerem Múltiplos Testes
+Quando o custo de computação para calcular o valor da função que você está buscando é mais alto, mas a busca precisa ser feita em várias regiões da lista, o Ternary Search pode ser mais interessante ao dividir a lista em três, o que pode diminuir a profundidade das operações repetidas, de forma que elas sejam feitas de maneira mais balanceada.
+
+5. Problemas de Ordenação e Busca em Dados Completamente Ordenados
+Embora o Binary Search seja geralmente mais eficiente para listas ordenadas, o Ternary Search pode ser mais interessante quando há vários candidatos a serem comparados simultaneamente (por exemplo, em casos de busca para encontrar um valor dentro de uma faixa ou quando múltiplos valores podem satisfazer uma condição). Isso pode ocorrer em problemas onde se busca por múltiplos valores em uma sequência ordenada de maneira mais balanceada.
+
+Conclusão:
+Em termos gerais, o Binary Search é preferido na maioria dos casos devido ao número menor de comparações feitas, mas o Ternary Search pode ser útil em situações de otimização, onde a divisão em três partes pode se encaixar melhor no problema ou em problemas de busca de máximos/mínimos locais em funções unimodais. Em muitos casos, a escolha entre os dois depende da estrutura do problema e das características específicas da função ou dados que você está trabalhando.

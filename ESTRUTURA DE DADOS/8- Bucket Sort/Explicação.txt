@@ -1,0 +1,40 @@
+Preenchimento dos Baldes:
+Definir os Baldes: Primeiro, escolhemos o número de baldes que queremos usar e, em seguida, calculamos o intervalo de valores para cada balde. Isso depende do intervalo dos números da lista.
+
+Se temos números em um intervalo [0, 1), podemos dividir esse intervalo em, por exemplo, 5 baldes.
+O intervalo de cada balde seria então algo como:
+Balde 1: [0, 0.2)
+Balde 2: [0.2, 0.4)
+Balde 3: [0.4, 0.6)
+Balde 4: [0.6, 0.8)
+Balde 5: [0.8, 1)
+Distribuir os Números nos Baldes: Agora, percorremos os números da lista e colocamos cada número no balde correspondente, com base no valor. Por exemplo:
+
+Se temos o número 0.32, ele vai para o Balde 2 (porque está entre 0.2 e 0.4).
+Se temos o número 0.75, ele vai para o Balde 4 (porque está entre 0.6 e 0.8).
+Ordenação dos Baldes:
+Ordenar os Baldes Individualmente: Uma vez que todos os números estão distribuídos nos baldes, cada balde é ordenado separadamente. Podemos usar qualquer algoritmo simples de ordenação, como Insertion Sort ou Quick Sort, dependendo do tamanho dos baldes.
+
+Como os números em cada balde são relativamente poucos, o Insertion Sort é uma escolha comum, já que ele funciona bem para listas pequenas.
+Juntar os Baldes: Após a ordenação dentro de cada balde, nós "pegamos" os números de todos os baldes e os colocamos em uma nova lista, de forma sequencial, começando pelo balde 1 até o último balde.
+
+Exemplo Prático:
+Imaginando que temos os números [0.42, 0.32, 0.53, 0.23, 0.71, 0.12] e queremos usar 3 baldes para o intervalo [0, 1).
+
+Preenchendo os Baldes:
+
+Balde 1 (intervalo [0, 0.33)): Recebe 0.12, 0.23.
+Balde 2 (intervalo [0.33, 0.66)): Recebe 0.32, 0.42.
+Balde 3 (intervalo [0.66, 1)): Recebe 0.53, 0.71.
+Ordenando os Baldes:
+
+Balde 1: Ordenado como [0.12, 0.23].
+Balde 2: Ordenado como [0.32, 0.42].
+Balde 3: Ordenado como [0.53, 0.71].
+Concatenando os Baldes: Após ordenar os baldes, concatenamos os números:
+
+Resultado final: [0.12, 0.23, 0.32, 0.42, 0.53, 0.71].
+Conclusão:
+O processo de preencher é feito colocando cada número no balde correspondente, de acordo com o valor.
+A ordenação é feita dentro de cada balde, geralmente com um algoritmo simples como o Insertion Sort.
+Após ordenar os baldes, todos os números são reunidos para formar a lista final ordenada.

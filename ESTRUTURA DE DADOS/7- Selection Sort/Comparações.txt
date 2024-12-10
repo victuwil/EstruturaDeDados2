@@ -1,0 +1,14 @@
+Listas Pequenas
+Exemplo: 10 elementos.
+O Selection Sort funciona bem para listas pequenas, pois o número de comparações e trocas é relativamente pequeno.
+Em listas pequenas, a diferença de desempenho entre Selection Sort e algoritmos mais eficientes como Merge Sort ou Quick Sort é pequena, mas, ainda assim, o Selection Sort é mais lento do que o necessário para listas que não sejam triviais.
+
+2. Listas Médias
+Exemplo: 1.000 a 10.000 elementos.
+À medida que a lista cresce, o número de comparações aumenta quadraticamente. Para uma lista de 1.000 elementos, o Selection Sort realizará cerca de 499.500 comparações (aproximadamente n²/2).
+Mesmo para listas de tamanho médio, o algoritmo começa a mostrar sua ineficiência em comparação com algoritmos como Merge Sort (O(n log n)).
+
+3. Listas Grandes
+Exemplo: 100.000 ou mais elementos.
+O Selection Sort começa a se tornar impraticável em listas grandes devido à sua complexidade O(n²). Em listas com 100.000 elementos, o algoritmo faria cerca de 5 bilhões de comparações, o que é ineficiente e pode levar a um tempo de execução muito alto.
+Algoritmos mais eficientes como Quick Sort, Merge Sort ou Heap Sort são preferíveis para listas grandes, pois possuem uma complexidade melhor.

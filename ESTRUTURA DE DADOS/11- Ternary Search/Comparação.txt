@@ -1,0 +1,10 @@
+Explicação:
+Ternary Search: A lista é dividida em três partes a cada iteração. O algoritmo verifica dois pontos na lista para decidir qual parte da lista deve ser considerada na próxima iteração. Isso pode reduzir a quantidade de busca mais rapidamente, mas requer mais comparações do que o Binary Search.
+
+Binary Search: A lista é dividida em duas partes a cada iteração. Cada iteração faz uma única comparação com o ponto médio e escolhe uma das metades para a próxima iteração. Esse algoritmo é mais eficiente que o Ternary Search em termos de número de comparações, já que divide a lista pela metade em cada iteração.
+
+Desempenho:
+Ternary Search tende a ter uma leve desvantagem em termos de tempo de execução em relação ao Binary Search, pois realiza duas comparações por iteração, enquanto o Binary Search realiza apenas uma. Porém, ambos os algoritmos têm complexidade O(log n), sendo a diferença no número de comparações em cada iteração.
+Considerações:
+Para listas muito grandes, o desempenho do Binary Search será ligeiramente melhor devido ao número menor de comparações feitas em cada iteração.
+O Ternary Search pode ser útil em cenários específicos, mas, em geral, o Binary Search é mais eficiente.

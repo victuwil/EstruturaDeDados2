@@ -1,0 +1,26 @@
+O Interpolation Search é mais eficiente que o Binary Search em casos onde os dados da lista ordenada têm intervalos uniformes ou quase uniformes. Isso significa que os números na lista seguem uma progressão regular ou estão distribuídos de forma previsível.
+
+Por que?
+A interpolação tenta "adivinhar" a posição do número alvo com base na distância entre os valores na lista. Isso reduz o número de passos quando os dados estão bem distribuídos.
+
+Exemplos práticos onde o Interpolation Search é mais eficiente:
+Lista com intervalos regulares:
+
+Exemplo: [10, 20, 30, 40, 50, 60, 70, 80]
+Se você procurar o número 70, a interpolação vai "pular" direto para a região certa, em vez de dividir a lista ao meio como a Binary Search.
+Listas com muitos valores uniformemente espaçados:
+
+Exemplo: [1, 2, 3, 4, ..., 1.000.000]
+Procurar pelo número 999.999 é mais rápido, pois a interpolação vai direto para o final da lista, enquanto a Binary Search continua dividindo.
+Quando o Interpolation Search não é eficiente:
+Lista com intervalos desiguais:
+
+Exemplo: [1, 4, 9, 16, 25, 36, 100]
+Aqui, a interpolação pode "errar o chute", enquanto a Binary Search funciona bem dividindo sempre ao meio.
+Lista pequena:
+
+Exemplo: [1, 10, 100]
+Para listas curtas, o custo adicional do cálculo de interpolação não compensa.
+Resumo:
+Use Interpolation Search: Listas longas, valores bem distribuídos (ex.: preços, datas, IDs sequenciais).
+Prefira Binary Search: Listas pequenas ou com intervalos desiguais

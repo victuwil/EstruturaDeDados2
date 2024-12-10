@@ -1,0 +1,33 @@
+O conceito de "dividir para conquistar" é uma estratégia de resolução de problemas que envolve três etapas principais:
+
+Dividir: O problema é dividido em subproblemas menores, que são mais fáceis de resolver. No caso do Merge Sort, a lista é dividida recursivamente em duas metades até que cada sublista tenha um ou nenhum elemento.
+
+Conquistar: Cada subproblema é resolvido de forma independente. No Merge Sort, isso significa que, ao dividir a lista, as sublistas com um único elemento já estão ordenadas (pois uma lista com um único elemento está automaticamente ordenada).
+
+Combinar: As soluções dos subproblemas são combinadas para formar a solução final do problema original. No Merge Sort, isso é feito pela função merge, que combina duas sublistas ordenadas em uma lista ordenada maior.
+
+Como o "dividir para conquistar" funciona no Merge Sort?
+Dividir: O Merge Sort começa dividindo a lista em duas metades. A cada chamada recursiva, a lista é dividida ao meio até que as sublistas sejam compostas de um único elemento ou nenhum (em caso de listas vazias).
+
+Conquistar: Uma vez que as sublistas atingem o tamanho mínimo (uma única string ou nenhum elemento), elas são consideradas ordenadas, pois uma lista de um único elemento já está ordenada por definição.
+
+Combinar: O próximo passo é a combinação dessas sublistas pequenas ordenadas. A função merge compara os elementos das duas sublistas e os coloca na ordem correta. Esse processo é repetido até que todas as sublistas sejam combinadas em uma única lista ordenada.
+
+Exemplo didático:
+Imagina que você tenha a lista: ["banana", "maçã", "laranja", "abacaxi"].
+
+Dividir:
+Dividimos a lista ao meio:
+["banana", "maçã"] e ["laranja", "abacaxi"].
+
+Conquistar:
+Agora, cada uma dessas sublistas é dividida ainda mais até que cada sublista tenha apenas um elemento.
+["banana"], ["maçã"], ["laranja"], ["abacaxi"].
+
+Combinar:
+Agora, vamos começar a combinar as sublistas em ordem:
+
+Ordenamos ["banana"] e ["maçã"] para obter ["banana", "maçã"].
+Ordenamos ["laranja"] e ["abacaxi"] para obter ["abacaxi", "laranja"].
+Finalmente, combinamos as duas sublistas ordenadas em uma única lista ordenada: ["abacaxi", "banana", "laranja", "maçã"].
+Esse é o processo de "dividir para conquistar" aplicado ao Merge Sort, onde o problema grande (ordenar uma lista) é dividido em problemas menores (sublistas), e depois as soluções dessas partes menores são combinadas para resolver o problema original de forma eficiente.

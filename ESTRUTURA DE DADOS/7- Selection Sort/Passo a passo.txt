@@ -1,0 +1,28 @@
+1ª Iteração:
+Lista original: ["banana", "maçã", "laranja", "abacaxi", "morango"]
+Encontramos o menor elemento da lista inteira. O menor valor é "abacaxi".
+Troca "banana" (primeiro elemento) com "abacaxi".
+Lista após a troca: ["abacaxi", "maçã", "laranja", "banana", "morango"]
+
+2ª Iteração:
+Agora, consideramos a sublista a partir do segundo elemento: ["maçã", "laranja", "banana", "morango"].
+O menor valor dessa sublista é "banana".
+Troca "maçã" (segundo elemento) com "banana".
+Lista após a troca: ["abacaxi", "banana", "laranja", "maçã", "morango"]
+
+3ª Iteração:
+Agora, consideramos a sublista a partir do terceiro elemento: ["laranja", "maçã", "morango"].
+O menor valor dessa sublista é "laranja".
+Como o menor valor já está na posição correta, não é feita troca.
+Lista permanece: ["abacaxi", "banana", "laranja", "maçã", "morango"]
+
+4ª Iteração:
+Agora, consideramos a sublista a partir do quarto elemento: ["maçã", "morango"].
+O menor valor dessa sublista é "maçã".
+Como o menor valor já está na posição correta, não é feita troca.
+Lista permanece: ["abacaxi", "banana", "laranja", "maçã", "morango"]
+
+5ª Iteração:
+Agora, restou apenas o último elemento, "morango", que já está na posição correta.
+Não é feita troca.
+Lista final ordenada: ["abacaxi", "banana", "laranja", "maçã", "morango"]

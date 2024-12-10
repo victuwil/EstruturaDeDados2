@@ -1,0 +1,15 @@
+Por que a lista precisa estar ordenada?
+Se a lista estiver ordenada (exemplo: [2, 4, 6, 8, 10, 12]):
+
+Você olha para o número do meio (no caso, 6).
+Pergunta: "8 é maior ou menor que 6?"
+Como 8 é maior, você ignora tudo à esquerda e só olha para a metade direita: [8, 10, 12].
+Repete o processo até achar o número ou acabar a lista.
+Agora, se a lista estiver desordenada (exemplo: [8, 4, 10, 2, 6, 12]):
+
+Você olha para o meio (10) e pensa: "8 é menor, então só vou olhar para a esquerda."
+Mas o 8 está na parte que você acabou de ignorar!
+Resultado: o algoritmo erra e não acha o número.
+Resumo prático:
+Lista ordenada: A busca binária sabe exatamente onde cortar porque os números estão em ordem crescente.
+Lista desordenada: A busca binária se confunde, porque os números não seguem uma sequência lógica.

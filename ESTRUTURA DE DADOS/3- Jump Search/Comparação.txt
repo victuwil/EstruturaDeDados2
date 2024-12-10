@@ -1,0 +1,11 @@
+Listas menores:
+
+O Binary Search é ligeiramente mais rápido porque não realiza cálculos adicionais para determinar os "saltos".
+Listas maiores:
+
+O Jump Search começa a perder desempenho para o Binary Search em listas significativamente grandes, devido ao número maior de operações envolvidas.
+Eficiência:
+
+O Binary Search é consistentemente mais rápido em geral, mas a diferença é menos perceptível em listas muito pequenas.
+Conclusão:
+Embora o Jump Search seja útil em certos casos, como listas distribuídas uniformemente, o Binary Search é mais eficiente e robusto para a maioria dos cenários.

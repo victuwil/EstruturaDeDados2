@@ -1,0 +1,14 @@
+Listas pequenas (1.000 e 10.000 elementos):
+
+O Binary Search é mais rápido devido à sua simplicidade e baixa sobrecarga de cálculo, já que não realiza saltos.
+O Exponential Search começa a mostrar um pequeno aumento no tempo devido à necessidade de calcular os saltos exponenciais.
+Listas médias (100.000 e 1.000.000 elementos):
+
+O Exponential Search começa a ser um pouco mais lento, pois o salto exponencial pode causar mais cálculos em listas grandes. No entanto, a diferença ainda é pequena e os dois algoritmos têm desempenho similar.
+Listas muito grandes (10.000.000 elementos):
+
+A diferença de tempo se torna mais notável. O Exponential Search começa a ser significativamente mais lento devido à sobrecarga do salto exponencial. Já o Binary Search, com sua busca direta, mantém uma performance eficiente.
+Binary Search permanece eficiente mesmo em listas muito grandes.
+Conclusão:
+Exponential Search tem um bom desempenho em listas pequenas e médias, mas perde desempenho em listas muito grandes devido ao custo dos saltos.
+Binary Search é consistentemente mais rápido e eficiente, especialmente em listas grandes.

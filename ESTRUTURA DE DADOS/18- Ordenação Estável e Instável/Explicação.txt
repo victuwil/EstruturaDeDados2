@@ -1,0 +1,21 @@
+Algoritmos de ordenação estáveis:
+Merge Sort: É um algoritmo de ordenação estável. Durante a fusão de sublistas, ele preserva a ordem dos elementos que têm chaves iguais.
+
+Bubble Sort: Também é estável. Como o algoritmo apenas troca elementos adjacentes, se dois elementos têm o mesmo valor, a ordem entre eles não será alterada.
+
+Insertion Sort: Este algoritmo também é estável. Quando insere um novo elemento na posição correta, se o novo elemento for igual ao elemento já na posição, ele é inserido após o elemento igual.
+
+Algoritmos de ordenação instáveis:
+Quick Sort: O Quick Sort não é estável. Durante a partição, elementos iguais ao pivô podem ter suas posições trocadas, o que pode alterar a ordem relativa de elementos com chaves iguais.
+
+Selection Sort: O Selection Sort não é estável. Ele pode trocar elementos não adjacentes, o que pode resultar em alterações na ordem de elementos com chaves iguais.
+
+Heap Sort: O Heap Sort também não é estável, pois a troca de elementos pode alterar a ordem relativa dos elementos com valores iguais durante o processo de construção do heap.
+
+Observe que, após a ordenação:
+
+Bubble Sort (Estável): A ordem relativa entre "Alice" e "Carlos" é mantida. Alice vem antes de Carlos porque ela aparece antes na lista original.
+Quick Sort (Instável): A ordem relativa entre "Alice" e "Carlos" pode ser trocada. No exemplo, Carlos vem antes de Alice.
+Conclusão:
+Estabilidade é uma característica importante quando se deseja manter a ordem original de elementos com valores iguais.
+Algoritmos estáveis como o Merge Sort, Bubble Sort e Insertion Sort preservam essa ordem, enquanto algoritmos instáveis como o Quick Sort, Selection Sort e Heap Sort podem alterar a ordem relativa de elementos com chaves iguais.

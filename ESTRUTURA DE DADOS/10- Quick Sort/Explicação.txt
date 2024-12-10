@@ -1,0 +1,12 @@
+
+O Quick Sort tem desempenho diferente em listas quase ordenadas e desordenadas:
+
+Lista Quase Ordenada:
+
+Se o pivô for o primeiro ou último elemento, o desempenho pode cair para O(n²) devido a divisões desiguais.
+Se o pivô for o meio da lista, o desempenho é melhor, mais equilibrado, e o tempo de execução tende a ser O(n log n).
+Lista Desordenada:
+
+Em listas desordenadas, o Quick Sort geralmente tem bom desempenho, com tempo O(n log n) se o pivô for escolhido de forma eficiente (como o meio ou aleatório).
+Se o pivô for mal escolhido (primeiro ou último elemento), pode cair para O(n²), mas isso é menos comum.
+Em resumo, o pivô central oferece melhor desempenho, enquanto o pivô das extremidades pode resultar em desempenho pior, especialmente em listas quase ordenadas.

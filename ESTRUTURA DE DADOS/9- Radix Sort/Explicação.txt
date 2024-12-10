@@ -1,0 +1,26 @@
+O Radix Sort é um algoritmo de ordenação que pode ser ajustado para diferentes bases (como base 10, base 2, base 16) de maneira simples. Ele funciona dividindo os números em "dígitos" e ordenando de acordo com a posição de cada dígito, começando pelo menos significativo e indo até o mais significativo.
+
+Como funciona em bases diferentes:
+Base 10 (Decimal):
+
+Números são divididos em dígitos de 0 a 9 (unidades, dezenas, centenas).
+Exemplo: 54321 é dividido em 5, 4, 3, 2, 1 e ordenado.
+Base 2 (Binário):
+
+Cada número é dividido em bits (0 ou 1).
+Exemplo: O número 10110 seria dividido em 1, 0, 1, 1, 0 e ordenado.
+Funciona com 2 valores possíveis (0 e 1).
+Base 16 (Hexadecimal):
+
+Cada número é dividido em dígitos de 0 a F (0-15).
+Exemplo: O número 2A3F seria dividido em 2, A, 3, F e ordenado.
+Adaptação para diferentes bases:
+A principal mudança é o número de valores possíveis para cada "dígito" (base):
+Base 10: 10 valores (0-9)
+Base 2: 2 valores (0-1)
+Base 16: 16 valores (0-F)
+O Counting Sort é usado para ordenar os números com base nesses dígitos, com a base determinando o tamanho do "balde" que guarda os valores.
+Conclusão:
+Em base 10, ele lida com os dígitos comuns (0-9).
+Em base 2, lida com 0s e 1s (como os computadores fazem).
+Em base 16, lida com números de 0 a F, úteis para representar dados binários de forma compacta.

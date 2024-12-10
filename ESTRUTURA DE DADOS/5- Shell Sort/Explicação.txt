@@ -1,0 +1,18 @@
+A escolha da sequência de intervalos no Shell Sort afeta diretamente sua eficiência. Vou explicar de maneira simples as três sequências principais:
+
+1. Sequência de Shell (Original)
+Começa com intervalos grandes, como n/2, e vai diminuindo pela metade (ex.: n/2, n/4, n/8, ...).
+Desvantagem: Essa sequência pode ser muito lenta, pois os intervalos diminuem muito rápido, fazendo com que o algoritmo precise de muitas comparações no final.
+Complexidade: Pode chegar a O(n^2) no pior caso.
+2. Sequência de Knuth
+Usa a fórmula 3^k - 1 / 2 para gerar intervalos (ex.: 1, 4, 13, 40, 121, ...).
+Vantagem: Melhora a eficiência, pois os intervalos são ajustados de maneira mais equilibrada, evitando muitas comparações em fases finais.
+Complexidade: A complexidade fica em torno de O(n^(3/2)).
+3. Sequência de Hibbard
+Os intervalos seguem a fórmula 2^k - 1 (ex.: 1, 3, 7, 15, 31, ...).
+Vantagem: É mais eficiente que as anteriores, reduzindo ainda mais o número de comparações e trocas necessárias.
+Complexidade: A complexidade é mais eficiente, ficando em O(n^(3/2)) ou melhor.
+Resumo:
+Sequência de Shell: mais simples, mas menos eficiente.
+Sequência de Knuth: mais eficiente que a de Shell.
+Sequência de Hibbard: mais eficiente, reduz mais comparações e trocas.

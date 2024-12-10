@@ -1,0 +1,82 @@
+Algoritmos de Busca:
+Binary Search:
+
+Complexidade de Tempo:
+Melhor Caso: O(log n) — ocorre quando o elemento está no meio da lista.
+Pior Caso: O(log n) — a cada iteração, a busca corta a lista pela metade.
+Caso Médio: O(log n) — similar ao pior caso.
+Complexidade de Espaço:
+O(1) — usa uma quantidade constante de espaço extra, pois não requer armazenamento adicional além de algumas variáveis para os índices.
+Interpolation Search:
+
+Complexidade de Tempo:
+Melhor Caso: O(1) — ocorre quando o valor procurado está bem localizado na lista.
+Pior Caso: O(n) — se os valores estiverem distribuídos de forma desigual (como em uma lista com muitos valores repetidos ou em uma lista inversamente ordenada), o desempenho pode ser muito ruim.
+Caso Médio: O(log log n) — assume uma distribuição de dados relativamente uniforme.
+Complexidade de Espaço:
+O(1) — como o Binary Search, não requer espaço adicional significativo.
+Jump Search:
+
+Complexidade de Tempo:
+Melhor Caso: O(√n) — ocorre quando o valor está próximo ao início ou ao final da lista e os saltos são eficientes.
+Pior Caso: O(√n) — dado que o algoritmo divide a busca em blocos e, no pior cenário, precisará percorrer um bloco inteiro.
+Caso Médio: O(√n) — dado que a lista é percorrida por saltos.
+Complexidade de Espaço:
+O(1) — o espaço adicional necessário é constante (apenas algumas variáveis).
+Exponential Search:
+
+Complexidade de Tempo:
+Melhor Caso: O(1) — quando o elemento procurado está no início da sequência.
+Pior Caso: O(log n) — similar ao Binary Search, pois a busca é dividida pela metade após identificar o intervalo.
+Caso Médio: O(log n) — similar ao Binary Search, mas com a vantagem de encontrar um intervalo de busca em logaritmo.
+Complexidade de Espaço:
+O(1) — usa espaço constante para os índices e variáveis auxiliares.
+Algoritmos de Ordenação:
+Shell Sort:
+
+Complexidade de Tempo:
+Melhor Caso: O(n log n) — quando o algoritmo é otimizado e o intervalo de passos é escolhido de forma eficiente.
+Pior Caso: O(n^2) — caso o intervalo de passos seja mal escolhido.
+Caso Médio: O(n^1.5) — é uma média, pois depende da escolha dos intervalos.
+Complexidade de Espaço:
+O(1) — o algoritmo é in-place, ou seja, não requer espaço adicional além do necessário para armazenar a lista.
+Merge Sort:
+
+Complexidade de Tempo:
+Melhor Caso: O(n log n) — o algoritmo sempre divide a lista e faz a fusão de maneira eficiente.
+Pior Caso: O(n log n) — não depende da distribuição dos dados.
+Caso Médio: O(n log n) — semelhante ao pior caso, já que sempre divide a lista ao meio.
+Complexidade de Espaço:
+O(n) — precisa de espaço adicional para armazenar as sublistas durante o processo de fusão.
+Selection Sort:
+
+Complexidade de Tempo:
+Melhor Caso: O(n^2) — o desempenho não muda independentemente da ordem dos elementos.
+Pior Caso: O(n^2) — o algoritmo sempre precisa fazer O(n^2) comparações, pois ele verifica todos os elementos para cada passo.
+Caso Médio: O(n^2) — semelhante ao pior caso.
+Complexidade de Espaço:
+O(1) — o algoritmo é in-place e usa espaço constante.
+Quick Sort:
+
+Complexidade de Tempo:
+Melhor Caso: O(n log n) — ocorre quando o pivô divide a lista de forma equilibrada.
+Pior Caso: O(n^2) — ocorre quando o pivô escolhido é o menor ou maior elemento, causando partições desequilibradas.
+Caso Médio: O(n log n) — a probabilidade de o algoritmo fazer boas partições é alta na maioria dos casos.
+Complexidade de Espaço:
+O(log n) — o Quick Sort usa recursão e, portanto, precisa de espaço para armazenar a pilha de chamadas recursivas.
+Bucket Sort:
+
+Complexidade de Tempo:
+Melhor Caso: O(n + k) — quando os dados estão bem distribuídos e cada balde pode ser ordenado rapidamente.
+Pior Caso: O(n^2) — caso todos os elementos caiam em um único balde, o algoritmo se comporta como o Insertion Sort ou outro algoritmo quadrático.
+Caso Médio: O(n + k) — assume uma distribuição uniforme dos elementos nos baldes.
+Complexidade de Espaço:
+O(n + k) — onde n é o número de elementos na lista e k é o número de baldes usados. O algoritmo precisa de espaço adicional para armazenar os baldes.
+Radix Sort:
+
+Complexidade de Tempo:
+Melhor Caso: O(nk) — onde n é o número de elementos e k é o número de dígitos ou a base do número.
+Pior Caso: O(nk) — depende do número de dígitos dos números a serem ordenados.
+Caso Médio: O(nk) — o tempo de execução é proporcional ao número de dígitos.
+Complexidade de Espaço:
+O(n + k) — o espaço extra necessário é proporcional ao número de elementos e ao número de dígitos (ou a base).
